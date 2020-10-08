@@ -1,4 +1,34 @@
-// MARK: - Mocks generated from file: swift-ut-sample/GenericTypeProto.swift at 2020-10-08 05:59:53 +0000
+// MARK: - Mocks generated from file: swift-ut-sample/ClsA+Count2.swift at 2020-10-08 15:14:29 +0000
+
+//
+//  ClsA+Count2.swift
+//  swift-ut-sample
+//
+//  Created by Yi Ning on 8/10/20.
+//  Copyright © 2020 booyah. All rights reserved.
+//
+
+import Cuckoo
+@testable import swift_ut_sample
+
+import Foundation
+
+// MARK: - Mocks generated from file: swift-ut-sample/ClsB+Count2.swift at 2020-10-08 15:14:29 +0000
+
+//
+//  ClsB+Count2.swift
+//  swift-ut-sample
+//
+//  Created by Yi Ning on 8/10/20.
+//  Copyright © 2020 booyah. All rights reserved.
+//
+
+import Cuckoo
+@testable import swift_ut_sample
+
+import Foundation
+
+// MARK: - Mocks generated from file: swift-ut-sample/GenericTypeProto.swift at 2020-10-08 15:14:29 +0000
 
 //
 //  GenericType.swift
@@ -138,7 +168,7 @@ public class GenericTypeStub: GenericType {
 }
 
 
-// MARK: - Mocks generated from file: swift-ut-sample/SampleUtil.swift at 2020-10-08 05:59:53 +0000
+// MARK: - Mocks generated from file: swift-ut-sample/SampleUtil.swift at 2020-10-08 15:14:29 +0000
 
 //
 //  SampleUtil.swift

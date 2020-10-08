@@ -26,11 +26,34 @@ class SampleUtilTests: SwiftUTSampleTests {
     }
     
     func testPrintGenericType() {
-//        let mock = MockClsA()
-//        stub(mock) { stub in
-//            when(stub.printGenericType(a:any())).thenReturn(1)
-//        }
-//        let b = ClsB(a:mock)
-//        XCTAssertEqual(b.printGenericType(a:TypeA()), 1)
+        let mock = MockClsA()
+        stub(mock) { stub in
+            when(stub.printGenericType(a:any(TypeA.self))).thenReturn(1)
+        }
+        let b = ClsB(a:mock)
+        XCTAssertEqual(b.printGenericType(a:TypeA()), 1)
+    }
+    
+    func testPrintGenericTypeStruct() {
+        let mock = MockClsA()
+        stub(mock) { stub in
+            when(stub.printGenericType(a:any(KeyValue.TypeC.self))).thenReturn(3)
+        }
+        let b = ClsB(a:mock)
+        XCTAssertEqual(b.printGenericType(a:KeyValue.TypeC()), 3)
+    }
+    
+    func testCount2() {
+        let mock = MockClsA()
+        stub(mock) { stub in
+            when(stub.count2(characters: "01234"))
+                .then({ (a: String) -> Int in
+                    debugPrint("mocked called")
+                    return 6
+                })
+        }
+        let b = ClsB(a:mock)
+//        let b = ClsB(a:ClsA())
+        XCTAssertEqual(b.count2(characters: "01234"), 6)
     }
 }

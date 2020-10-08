@@ -25,6 +25,7 @@ public class ClsB {
     }
 }
 
+
 public class ClsA {
     public func count(characters: String) -> Int {
         debugPrint(String(format:"ClsA.count characters %@", arguments:[characters]))

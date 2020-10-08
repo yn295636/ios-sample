@@ -23,3 +23,10 @@ public class TypeB: GenericType {
         
     }
 }
+public enum KeyValue {
+    struct TypeC: GenericType {
+        let key = "type_c"
+        let value = 3
+    }
+}
+

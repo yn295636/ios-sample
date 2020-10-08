@@ -18,6 +18,8 @@
 		F514509F252EBC810009DF41 /* SampleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514509C252EBC810009DF41 /* SampleUtil.swift */; };
 		F51450A1252EBCA30009DF41 /* SampleUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51450A0252EBCA30009DF41 /* SampleUtilTests.swift */; };
 		F5442A98252EDC94005C8A7E /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5442A97252EDC94005C8A7E /* GeneratedMocks.swift */; };
+		F57E4B67252F36BB00C58987 /* ClsA+Count2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4B66252F36BB00C58987 /* ClsA+Count2.swift */; };
+		F5EC4786252F3551006BF1FA /* ClsB+Count2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EC4785252F3551006BF1FA /* ClsB+Count2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		F5442A97252EDC94005C8A7E /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		F5442A99252EDCCE005C8A7E /* libPods-swift-ut-sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-swift-ut-sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5442A9B252EDCE4005C8A7E /* libCuckoo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCuckoo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57E4B66252F36BB00C58987 /* ClsA+Count2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClsA+Count2.swift"; sourceTree = "<group>"; };
+		F5EC4785252F3551006BF1FA /* ClsB+Count2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClsB+Count2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				F514509C252EBC810009DF41 /* SampleUtil.swift */,
 				F514507C252EBC2B0009DF41 /* swift_ut_sample.h */,
 				F514507D252EBC2B0009DF41 /* Info.plist */,
+				F5EC4785252F3551006BF1FA /* ClsB+Count2.swift */,
+				F57E4B66252F36BB00C58987 /* ClsA+Count2.swift */,
 			);
 			path = "swift-ut-sample";
 			sourceTree = "<group>";
@@ -303,6 +309,8 @@
 			inputPaths = (
 				"${INPUT_DIR}/SampleUtil.swift",
 				"${INPUT_DIR}/GenericTypeProto.swift",
+				"${INPUT_DIR}/ClsB+Count2.swift",
+				"${INPUT_DIR}/ClsA+Count2.swift",
 			);
 			name = "[Run Script] Cuckoo";
 			outputFileListPaths = (
@@ -312,7 +320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Generate mock classes by Cuckoo. Can check the doc from https://github.com/Brightify/Cuckoo\n# Type # Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\necho \"Cuckoo run script directory = ${PODS_ROOT}/Cuckoo/run\"\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n${INPUT_DIR}/SampleUtil.swift \\\n${INPUT_DIR}/GenericTypeProto.swift\n";
+			shellScript = "# Generate mock classes by Cuckoo. Can check the doc from https://github.com/Brightify/Cuckoo\n# Type # Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\necho \"Cuckoo run script directory = ${PODS_ROOT}/Cuckoo/run\"\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n${INPUT_DIR}/ClsB+Count2.swift \\\n${INPUT_DIR}/ClsA+Count2.swift \\\n${INPUT_DIR}/SampleUtil.swift \\\n${INPUT_DIR}/GenericTypeProto.swift\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -323,6 +331,8 @@
 			files = (
 				F514509D252EBC810009DF41 /* GenericTypeProto.swift in Sources */,
 				F514509E252EBC810009DF41 /* GenericTypes.swift in Sources */,
+				F5EC4786252F3551006BF1FA /* ClsB+Count2.swift in Sources */,
+				F57E4B67252F36BB00C58987 /* ClsA+Count2.swift in Sources */,
 				F514509F252EBC810009DF41 /* SampleUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +499,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seagroup.swift-ut-sample";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -517,7 +527,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seagroup.swift-ut-sample";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
