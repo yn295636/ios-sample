@@ -1,0 +1,6 @@
+module Pods_swift_ut_sampleTests {
+  umbrella header "Pods-swift-ut-sampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
