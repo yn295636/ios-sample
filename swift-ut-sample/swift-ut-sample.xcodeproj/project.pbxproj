@@ -19,6 +19,12 @@
 		F51450A1252EBCA30009DF41 /* SampleUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51450A0252EBCA30009DF41 /* SampleUtilTests.swift */; };
 		F5442A98252EDC94005C8A7E /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5442A97252EDC94005C8A7E /* GeneratedMocks.swift */; };
 		F57E4B67252F36BB00C58987 /* ClsA+Count2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4B66252F36BB00C58987 /* ClsA+Count2.swift */; };
+		F57E4BE22530045300C58987 /* SampleUtilWithProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4BE12530045300C58987 /* SampleUtilWithProtocols.swift */; };
+		F57E4BE6253004E600C58987 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4BE5253004E600C58987 /* Protocols.swift */; };
+		F57E4BEA2533F46100C58987 /* SampleUtilWithExtProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4BE92533F46100C58987 /* SampleUtilWithExtProtocols.swift */; };
+		F57E4BF02533F56200C58987 /* ProtoBImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4BEF2533F56200C58987 /* ProtoBImplTests.swift */; };
+		F57E4BF625340E9600C58987 /* ProtoBImplSubWithProtoBExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4BF525340E9500C58987 /* ProtoBImplSubWithProtoBExtTests.swift */; };
+		F57E4BFE253410AC00C58987 /* ProtocolExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4BFD253410AC00C58987 /* ProtocolExts.swift */; };
 		F5EC4786252F3551006BF1FA /* ClsB+Count2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EC4785252F3551006BF1FA /* ClsB+Count2.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +59,12 @@
 		F5442A99252EDCCE005C8A7E /* libPods-swift-ut-sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-swift-ut-sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5442A9B252EDCE4005C8A7E /* libCuckoo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCuckoo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57E4B66252F36BB00C58987 /* ClsA+Count2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClsA+Count2.swift"; sourceTree = "<group>"; };
+		F57E4BE12530045300C58987 /* SampleUtilWithProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUtilWithProtocols.swift; sourceTree = "<group>"; };
+		F57E4BE5253004E600C58987 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		F57E4BE92533F46100C58987 /* SampleUtilWithExtProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUtilWithExtProtocols.swift; sourceTree = "<group>"; };
+		F57E4BEF2533F56200C58987 /* ProtoBImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtoBImplTests.swift; sourceTree = "<group>"; };
+		F57E4BF525340E9500C58987 /* ProtoBImplSubWithProtoBExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtoBImplSubWithProtoBExtTests.swift; sourceTree = "<group>"; };
+		F57E4BFD253410AC00C58987 /* ProtocolExts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolExts.swift; sourceTree = "<group>"; };
 		F5EC4785252F3551006BF1FA /* ClsB+Count2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClsB+Count2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,10 +139,14 @@
 				F514509A252EBC810009DF41 /* GenericTypeProto.swift */,
 				F514509B252EBC810009DF41 /* GenericTypes.swift */,
 				F514509C252EBC810009DF41 /* SampleUtil.swift */,
-				F514507C252EBC2B0009DF41 /* swift_ut_sample.h */,
-				F514507D252EBC2B0009DF41 /* Info.plist */,
 				F5EC4785252F3551006BF1FA /* ClsB+Count2.swift */,
 				F57E4B66252F36BB00C58987 /* ClsA+Count2.swift */,
+				F57E4BE5253004E600C58987 /* Protocols.swift */,
+				F57E4BE12530045300C58987 /* SampleUtilWithProtocols.swift */,
+				F57E4BFD253410AC00C58987 /* ProtocolExts.swift */,
+				F57E4BE92533F46100C58987 /* SampleUtilWithExtProtocols.swift */,
+				F514507C252EBC2B0009DF41 /* swift_ut_sample.h */,
+				F514507D252EBC2B0009DF41 /* Info.plist */,
 			);
 			path = "swift-ut-sample";
 			sourceTree = "<group>";
@@ -142,6 +158,8 @@
 				F5145087252EBC2B0009DF41 /* SwiftUTSampleTests.swift */,
 				F5145089252EBC2B0009DF41 /* Info.plist */,
 				F51450A0252EBCA30009DF41 /* SampleUtilTests.swift */,
+				F57E4BEF2533F56200C58987 /* ProtoBImplTests.swift */,
+				F57E4BF525340E9500C58987 /* ProtoBImplSubWithProtoBExtTests.swift */,
 			);
 			path = "swift-ut-sampleTests";
 			sourceTree = "<group>";
@@ -320,7 +338,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Generate mock classes by Cuckoo. Can check the doc from https://github.com/Brightify/Cuckoo\n# Type # Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\necho \"Cuckoo run script directory = ${PODS_ROOT}/Cuckoo/run\"\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n${INPUT_DIR}/ClsB+Count2.swift \\\n${INPUT_DIR}/ClsA+Count2.swift \\\n${INPUT_DIR}/SampleUtil.swift \\\n${INPUT_DIR}/GenericTypeProto.swift\n";
+			shellScript = "# Generate mock classes by Cuckoo. Can check the doc from https://github.com/Brightify/Cuckoo\n# Type # Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\necho \"Cuckoo run script directory = ${PODS_ROOT}/Cuckoo/run\"\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n${INPUT_DIR}/ClsB+Count2.swift \\\n${INPUT_DIR}/ClsA+Count2.swift \\\n${INPUT_DIR}/SampleUtil.swift \\\n${INPUT_DIR}/GenericTypeProto.swift \\\n${INPUT_DIR}/Protocols.swift \\\n${INPUT_DIR}/ProtocolExts.swift\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -329,7 +347,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57E4BFE253410AC00C58987 /* ProtocolExts.swift in Sources */,
 				F514509D252EBC810009DF41 /* GenericTypeProto.swift in Sources */,
+				F57E4BE22530045300C58987 /* SampleUtilWithProtocols.swift in Sources */,
+				F57E4BEA2533F46100C58987 /* SampleUtilWithExtProtocols.swift in Sources */,
+				F57E4BE6253004E600C58987 /* Protocols.swift in Sources */,
 				F514509E252EBC810009DF41 /* GenericTypes.swift in Sources */,
 				F5EC4786252F3551006BF1FA /* ClsB+Count2.swift in Sources */,
 				F57E4B67252F36BB00C58987 /* ClsA+Count2.swift in Sources */,
@@ -342,8 +364,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5145088252EBC2B0009DF41 /* SwiftUTSampleTests.swift in Sources */,
+				F57E4BF625340E9600C58987 /* ProtoBImplSubWithProtoBExtTests.swift in Sources */,
 				F5442A98252EDC94005C8A7E /* GeneratedMocks.swift in Sources */,
 				F51450A1252EBCA30009DF41 /* SampleUtilTests.swift in Sources */,
+				F57E4BF02533F56200C58987 /* ProtoBImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ public class ClsB {
     }
     
     public func count(characters: String) -> Int {
-        debugPrint(String(format:"ClsB.count characters %@", arguments:[characters]))
+        debugPrint(String(format:"ClsB.count characters %@", characters))
         return self.a.count(characters: characters)
     }
     
@@ -28,7 +28,7 @@ public class ClsB {
 
 public class ClsA {
     public func count(characters: String) -> Int {
-        debugPrint(String(format:"ClsA.count characters %@", arguments:[characters]))
+        debugPrint(String(format:"ClsA.count characters %@", characters))
         return characters.count
     }
     
