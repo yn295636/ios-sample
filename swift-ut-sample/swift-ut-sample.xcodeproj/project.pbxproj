@@ -10,6 +10,9 @@
 		594D69E225D8BAE2141742A3 /* libPods-swift-ut-sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB107588C9BC2F5F156B3432 /* libPods-swift-ut-sample.a */; };
 		A63B51D818390105A4E5799A /* libPods-swift-ut-sampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBCB8C32E97B8217E9EECF6 /* libPods-swift-ut-sampleTests.a */; };
 		E828258CD19837253EB12480 /* libPods-swift-ut-sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5442A99252EDCCE005C8A7E /* libPods-swift-ut-sample.a */; };
+		F5136DA72537E6600036334C /* ProtocolMultiExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5136DA62537E6600036334C /* ProtocolMultiExts.swift */; };
+		F5136DAB2537E6E70036334C /* SampleUtilWithMultiExtProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5136DAA2537E6E70036334C /* SampleUtilWithMultiExtProtocols.swift */; };
+		F5136DB12537F18E0036334C /* ProtoCImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5136DB02537F18E0036334C /* ProtoCImplTests.swift */; };
 		F5145083252EBC2B0009DF41 /* swift_ut_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5145079252EBC2B0009DF41 /* swift_ut_sample.framework */; };
 		F5145088252EBC2B0009DF41 /* SwiftUTSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5145087252EBC2B0009DF41 /* SwiftUTSampleTests.swift */; };
 		F514508A252EBC2B0009DF41 /* swift_ut_sample.h in Headers */ = {isa = PBXBuildFile; fileRef = F514507C252EBC2B0009DF41 /* swift_ut_sample.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +28,9 @@
 		F57E4BF02533F56200C58987 /* ProtoBImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4BEF2533F56200C58987 /* ProtoBImplTests.swift */; };
 		F57E4BF625340E9600C58987 /* ProtoBImplSubWithProtoBExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4BF525340E9500C58987 /* ProtoBImplSubWithProtoBExtTests.swift */; };
 		F57E4BFE253410AC00C58987 /* ProtocolExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E4BFD253410AC00C58987 /* ProtocolExts.swift */; };
+		F599E70C253891660039E012 /* ComplexProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599E70B253891660039E012 /* ComplexProtocols.swift */; };
+		F599E710253891BE0039E012 /* SampleUtilWithComplexProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599E70F253891BE0039E012 /* SampleUtilWithComplexProtocols.swift */; };
+		F599E71C253892FB0039E012 /* ProtoBCplxImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599E71B253892FB0039E012 /* ProtoBCplxImplTests.swift */; };
 		F5EC4786252F3551006BF1FA /* ClsB+Count2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EC4785252F3551006BF1FA /* ClsB+Count2.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +51,9 @@
 		CB107588C9BC2F5F156B3432 /* libPods-swift-ut-sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-swift-ut-sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDE9350E3186B2357989A37 /* Pods-swift-ut-sampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-ut-sampleTests.debug.xcconfig"; path = "Target Support Files/Pods-swift-ut-sampleTests/Pods-swift-ut-sampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCBCB8C32E97B8217E9EECF6 /* libPods-swift-ut-sampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-swift-ut-sampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5136DA62537E6600036334C /* ProtocolMultiExts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolMultiExts.swift; sourceTree = "<group>"; };
+		F5136DAA2537E6E70036334C /* SampleUtilWithMultiExtProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUtilWithMultiExtProtocols.swift; sourceTree = "<group>"; };
+		F5136DB02537F18E0036334C /* ProtoCImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtoCImplTests.swift; sourceTree = "<group>"; };
 		F5145079252EBC2B0009DF41 /* swift_ut_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swift_ut_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F514507C252EBC2B0009DF41 /* swift_ut_sample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swift_ut_sample.h; sourceTree = "<group>"; };
 		F514507D252EBC2B0009DF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +74,9 @@
 		F57E4BEF2533F56200C58987 /* ProtoBImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtoBImplTests.swift; sourceTree = "<group>"; };
 		F57E4BF525340E9500C58987 /* ProtoBImplSubWithProtoBExtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtoBImplSubWithProtoBExtTests.swift; sourceTree = "<group>"; };
 		F57E4BFD253410AC00C58987 /* ProtocolExts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolExts.swift; sourceTree = "<group>"; };
+		F599E70B253891660039E012 /* ComplexProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexProtocols.swift; sourceTree = "<group>"; };
+		F599E70F253891BE0039E012 /* SampleUtilWithComplexProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUtilWithComplexProtocols.swift; sourceTree = "<group>"; };
+		F599E71B253892FB0039E012 /* ProtoBCplxImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtoBCplxImplTests.swift; sourceTree = "<group>"; };
 		F5EC4785252F3551006BF1FA /* ClsB+Count2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClsB+Count2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +157,10 @@
 				F57E4BE12530045300C58987 /* SampleUtilWithProtocols.swift */,
 				F57E4BFD253410AC00C58987 /* ProtocolExts.swift */,
 				F57E4BE92533F46100C58987 /* SampleUtilWithExtProtocols.swift */,
+				F5136DA62537E6600036334C /* ProtocolMultiExts.swift */,
+				F5136DAA2537E6E70036334C /* SampleUtilWithMultiExtProtocols.swift */,
+				F599E70B253891660039E012 /* ComplexProtocols.swift */,
+				F599E70F253891BE0039E012 /* SampleUtilWithComplexProtocols.swift */,
 				F514507C252EBC2B0009DF41 /* swift_ut_sample.h */,
 				F514507D252EBC2B0009DF41 /* Info.plist */,
 			);
@@ -160,6 +176,8 @@
 				F51450A0252EBCA30009DF41 /* SampleUtilTests.swift */,
 				F57E4BEF2533F56200C58987 /* ProtoBImplTests.swift */,
 				F57E4BF525340E9500C58987 /* ProtoBImplSubWithProtoBExtTests.swift */,
+				F5136DB02537F18E0036334C /* ProtoCImplTests.swift */,
+				F599E71B253892FB0039E012 /* ProtoBCplxImplTests.swift */,
 			);
 			path = "swift-ut-sampleTests";
 			sourceTree = "<group>";
@@ -325,20 +343,24 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${INPUT_DIR}/SampleUtil.swift",
-				"${INPUT_DIR}/GenericTypeProto.swift",
-				"${INPUT_DIR}/ClsB+Count2.swift",
-				"${INPUT_DIR}/ClsA+Count2.swift",
+				"${PROJECT_DIR}/${PROJECT_NAME}/SampleUtil.swift",
+				"${PROJECT_DIR}/${PROJECT_NAME}/GenericTypeProto.swift",
+				"${PROJECT_DIR}/${PROJECT_NAME}/ClsB+Count2.swift",
+				"${PROJECT_DIR}/${PROJECT_NAME}/ClsA+Count2.swift",
+				"${PROJECT_DIR}/${PROJECT_NAME}/Protocols.swift",
+				"${PROJECT_DIR}/${PROJECT_NAME}/ProtocolExts.swift",
+				"${PROJECT_DIR}/${PROJECT_NAME}/ProtocolMultiExts.swift",
+				"${PROJECT_DIR}/${PROJECT_NAME}/ComplexProtocols.swift",
 			);
 			name = "[Run Script] Cuckoo";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${OUTPUT_FILE}",
+				"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Generate mock classes by Cuckoo. Can check the doc from https://github.com/Brightify/Cuckoo\n# Type # Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\necho \"Cuckoo run script directory = ${PODS_ROOT}/Cuckoo/run\"\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n${INPUT_DIR}/ClsB+Count2.swift \\\n${INPUT_DIR}/ClsA+Count2.swift \\\n${INPUT_DIR}/SampleUtil.swift \\\n${INPUT_DIR}/GenericTypeProto.swift \\\n${INPUT_DIR}/Protocols.swift \\\n${INPUT_DIR}/ProtocolExts.swift\n";
+			shellScript = "# Generate mock classes by Cuckoo. Can check the doc from https://github.com/Brightify/Cuckoo\n# Type # Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\necho \"Cuckoo run script directory = ${PODS_ROOT}/Cuckoo/run\"\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n${INPUT_DIR}/ClsB+Count2.swift \\\n${INPUT_DIR}/ClsA+Count2.swift \\\n${INPUT_DIR}/SampleUtil.swift \\\n${INPUT_DIR}/GenericTypeProto.swift \\\n${INPUT_DIR}/Protocols.swift \\\n${INPUT_DIR}/ProtocolExts.swift \\\n${INPUT_DIR}/ProtocolMultiExts.swift \\\n${INPUT_DIR}/ComplexProtocols.swift\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -350,10 +372,14 @@
 				F57E4BFE253410AC00C58987 /* ProtocolExts.swift in Sources */,
 				F514509D252EBC810009DF41 /* GenericTypeProto.swift in Sources */,
 				F57E4BE22530045300C58987 /* SampleUtilWithProtocols.swift in Sources */,
+				F5136DA72537E6600036334C /* ProtocolMultiExts.swift in Sources */,
 				F57E4BEA2533F46100C58987 /* SampleUtilWithExtProtocols.swift in Sources */,
 				F57E4BE6253004E600C58987 /* Protocols.swift in Sources */,
+				F599E70C253891660039E012 /* ComplexProtocols.swift in Sources */,
 				F514509E252EBC810009DF41 /* GenericTypes.swift in Sources */,
 				F5EC4786252F3551006BF1FA /* ClsB+Count2.swift in Sources */,
+				F5136DAB2537E6E70036334C /* SampleUtilWithMultiExtProtocols.swift in Sources */,
+				F599E710253891BE0039E012 /* SampleUtilWithComplexProtocols.swift in Sources */,
 				F57E4B67252F36BB00C58987 /* ClsA+Count2.swift in Sources */,
 				F514509F252EBC810009DF41 /* SampleUtil.swift in Sources */,
 			);
@@ -363,11 +389,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F599E71C253892FB0039E012 /* ProtoBCplxImplTests.swift in Sources */,
 				F5145088252EBC2B0009DF41 /* SwiftUTSampleTests.swift in Sources */,
 				F57E4BF625340E9600C58987 /* ProtoBImplSubWithProtoBExtTests.swift in Sources */,
 				F5442A98252EDC94005C8A7E /* GeneratedMocks.swift in Sources */,
 				F51450A1252EBCA30009DF41 /* SampleUtilTests.swift in Sources */,
 				F57E4BF02533F56200C58987 /* ProtoBImplTests.swift in Sources */,
+				F5136DB12537F18E0036334C /* ProtoCImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

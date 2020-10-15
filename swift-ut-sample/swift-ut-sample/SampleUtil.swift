@@ -8,6 +8,20 @@
 
 import Foundation
 
+public class ClsA {
+    public func count(characters: String) -> Int {
+        debugPrint(String(format:"ClsA.count characters %@", characters))
+        return characters.count
+    }
+    
+    public func printGenericType <A: GenericType>(a: A) -> Int{
+        debugPrint(String(format: "ClsA.printGenericType %@ %d", a.key, a.value))
+        return a.value
+    }
+}
+
+
+//MARK: Class under test
 public class ClsB {
     let a: ClsA
     public init(a: ClsA) {
@@ -22,18 +36,5 @@ public class ClsB {
     public func printGenericType <B: GenericType>(a: B) -> Int {
         debugPrint(String(format: "ClsB.printGenericType %@ %d", a.key, a.value))
         return self.a.printGenericType(a: a)
-    }
-}
-
-
-public class ClsA {
-    public func count(characters: String) -> Int {
-        debugPrint(String(format:"ClsA.count characters %@", characters))
-        return characters.count
-    }
-    
-    public func printGenericType <A: GenericType>(a: A) -> Int{
-        debugPrint(String(format: "ClsA.printGenericType %@ %d", a.key, a.value))
-        return a.value
     }
 }

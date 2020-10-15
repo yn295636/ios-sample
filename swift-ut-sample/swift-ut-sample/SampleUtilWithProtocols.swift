@@ -20,8 +20,10 @@ class ProtoAImpl: ProtoA {
     }
 }
 
+
+//MARK: Class under test
 class ProtoBImpl: ProtoB {
-    var a: ProtoA
+    let a: ProtoA
     
     public init(a: ProtoA) {
         self.a = a

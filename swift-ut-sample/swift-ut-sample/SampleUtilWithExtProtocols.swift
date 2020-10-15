@@ -15,6 +15,18 @@ extension ProtoAImpl: ProtoAExt {
     }
 }
 
+
+//MARK: Class under test
+
+// This way doesn't work
+//extension ProtoBImpl: ProtoBExt {
+//
+//    public func count2(c: String) -> Int {
+//        debugPrint(String(format:"ProtoBImpl(ProtoBExt).count2 characters %@", c))
+//        return self.a.count2(c: c)
+//    }
+//}
+
 class ProtoBImplSubWithProtoBExt: ProtoBImpl,ProtoBExt {
     var aX: ProtoAExt
     

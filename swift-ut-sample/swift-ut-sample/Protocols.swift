@@ -14,7 +14,6 @@ protocol ProtoA {
 }
 
 protocol ProtoB {
-    var a: ProtoA { get }
     func count(c: String) -> Int
     func printGenericType<T: GenericType>(t: T) -> Int
 }
