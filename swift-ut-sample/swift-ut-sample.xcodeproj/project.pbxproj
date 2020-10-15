@@ -172,12 +172,12 @@
 			children = (
 				F5442A97252EDC94005C8A7E /* GeneratedMocks.swift */,
 				F5145087252EBC2B0009DF41 /* SwiftUTSampleTests.swift */,
-				F5145089252EBC2B0009DF41 /* Info.plist */,
 				F51450A0252EBCA30009DF41 /* SampleUtilTests.swift */,
 				F57E4BEF2533F56200C58987 /* ProtoBImplTests.swift */,
 				F57E4BF525340E9500C58987 /* ProtoBImplSubWithProtoBExtTests.swift */,
 				F5136DB02537F18E0036334C /* ProtoCImplTests.swift */,
 				F599E71B253892FB0039E012 /* ProtoBCplxImplTests.swift */,
+				F5145089252EBC2B0009DF41 /* Info.plist */,
 			);
 			path = "swift-ut-sampleTests";
 			sourceTree = "<group>";
